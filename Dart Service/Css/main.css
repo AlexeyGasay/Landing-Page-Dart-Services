@@ -6,6 +6,7 @@
     font-family: 'Raleway', sans-serif;
     list-style-type: none;
     text-decoration: none;
+	
 }
 
 
@@ -205,7 +206,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 }
 
-.statistic-block-1, .statistic-block-2, .statistic-block-3, .statistic-block-4 {
+.statistic-block-1,
+.statistic-block-2,
+.statistic-block-3,
+.statistic-block-4 {
     align-items: center;
     background-color: silver;
     color: #fff;
@@ -301,10 +305,54 @@ h1,h2,h3,h4,h5,h6 {
 
 
 
+/* - - - - Beginning of styles for Comments <Services> - - - - - */
 
 
+.comments {
+	background-image: url(../img/services-bg.jpg);
+	background-repeat: no-repeat;
+	height: 565px;
+	margin-top: 100px;
+}
 
 
+.comments-title {
+	color: #fff;
+	padding: 0;
+	margin-top: 135px;
+	max-width: 520px;
+	text-align: left;
+}
+
+.comments-title h2 {
+	font-size: 45px;
+	font-weight: 500;
+}
+
+.comments-title p {
+	font-size: 15px;
+	line-height: 25px;
+	margin-bottom: 65px;
+	
+}
+
+.comments-start {
+	background-color: #061e37;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: 600;
+	padding: 20px;
+	margin-left: 10px;
+	transition: 1.2s;
+}
+
+.comments-start:hover,
+.comments-start:focus {
+	background-color: #fff;
+	color: #061e37;
+	outline: none;
+	transition: 1.2s;
+}
 
 
 
