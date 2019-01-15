@@ -9,10 +9,13 @@
 	
 }
 
-
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
+}
+
+body {
+	margin: 0;
 }
 
 .title-h2 {
@@ -313,6 +316,7 @@ h1,h2,h3,h4,h5,h6 {
 	background-repeat: no-repeat;
 	height: 565px;
 	margin-top: 100px;
+	justify-content: space-around
 }
 
 
@@ -353,6 +357,86 @@ h1,h2,h3,h4,h5,h6 {
 	outline: none;
 	transition: 1.2s;
 }
+
+
+
+
+/* - - - - Block commentary <Comments > - - - - */
+
+
+.block-commentary {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 0;
+	padding-top: 88px;
+	
+}
+
+.block-commentary img {
+	
+}
+
+img.commentary-avatar {
+	align-self: center;
+	margin-right: 50px;
+}
+
+
+.commentary-1,
+.commentary-2 {
+	display: flex;
+	text-align: left
+}
+
+
+.commentary {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 30px 60px 14px 30px;
+	color: #78909c;
+	
+}
+
+.commentary h4 {
+	color: #061e37;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
