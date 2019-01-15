@@ -28,6 +28,8 @@ body {
 .title-p {
     color: #b0bec5;
     max-width: 560px;
+	margin: 0 auto;
+	margin-top: 15px;
 }
 
 
@@ -151,9 +153,11 @@ body {
     text-align: center;
 }
 
+
 .reason-we {
+	justify-content: center;
     text-align: center;
-    max-width: 345px;
+	margin-right: 0;
 }
 
 .reason-we h4 {
@@ -166,6 +170,8 @@ body {
 .reason-we p {
     color: #78909c;
     font-size: 15px;
+    max-width: 345px;
+	margin: 20px auto 0 auto;
     
 }
 
@@ -403,15 +409,26 @@ img.commentary-avatar {
 }
 
 
+/* - - - - - - - - - - -*/
 
 
 
 
 
+.our-team {
+	margin-top: 100px;
+}
 
 
+.our-team-title {
+	text-align: center;
+}
 
 
+.our-team-avatar {
+	display: flex;
+	justify-content: center;
+}
 
 
 
