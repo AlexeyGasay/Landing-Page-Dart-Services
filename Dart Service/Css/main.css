@@ -6,6 +6,8 @@
     font-family: 'Raleway', sans-serif;
     list-style-type: none;
     text-decoration: none;
+	transition: all 1s;
+	
 	
 }
 
@@ -431,30 +433,40 @@ img.commentary-avatar {
 }
 
 
+/* --------- */
+
+
+.avatar-1,
+.avatar-3 {
+	transform: scale(0.70);
+	opacity: 0.35;
+	transition: 3s;
+}
+
+.show-info:checked + label > img{
+	transform: scale(1);
+	transition: 3s;
+	opacity: 1;
+
+	
+}
 
 
 
 
+.content {
+  margin: auto;
+  max-width: 600px;
+  padding: 30px;
+  background: #777;
+  color: white;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.hide-show-content:checked ~ .our-team .row-2 .our-team-avatar .avatar-1 {
+  display: none;
+}
 
 
 
