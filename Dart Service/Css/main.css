@@ -443,7 +443,7 @@ img.commentary-avatar {
 	transition: 3s;
 }
 
-.show-info:checked + label > img{
+.show-info:checked {
 	transform: scale(1);
 	transition: 3s;
 	opacity: 1;
@@ -462,16 +462,9 @@ img.commentary-avatar {
   color: white;
 }
 
-
-
-.hide-show-content:checked ~ .our-team .row-2 .our-team-avatar .avatar-1 {
-  display: none;
+.show-info:checked ~ .row-2 .our-team-avatar  {
+	visibility: hidden
 }
-
-
-
-
-
 
 
 
