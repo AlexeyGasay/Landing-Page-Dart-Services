@@ -677,7 +677,19 @@ footer nav {
 	font-size: 15px;
     transition: .4s;
 	margin: 0 25px;
+	outline: none;
 }
+
+/*
+.footer-menu a:hover, .footer-menu a:focus {
+	border-radius: 5px 8px;
+	background-color:  #fff;
+	color: #061e37;
+	padding: 2px 0 2px 0;
+}
+*/
+
+
 /* - - - - End of styles for row-1 <footer> - - - - */
 
 
@@ -714,6 +726,26 @@ footer nav {
 .our-links a {
 	margin: 0 10px;
 }
+
+.our-links a:hover,
+.our-links a:focus {
+	outline: 1px solid #fff;
+}
+
+/* - - - - Styles for links in footer - - - - */
+footer nav a:hover,
+footer nav a:focus,
+.legislative-information a:hover,
+.legislative-information a:focus {
+	border-radius: 5px 8px;
+	background-color:  #fff;
+	color: #061e37;
+	padding: 2px 0 2px 0;
+}
+
+/* - - - - Styles for img in footer - - - - */
+
+
 /* - - - - End of styles for row-2 <footer> - - - - */
 
 /* - - - - End of styles for Footer - - - - */
