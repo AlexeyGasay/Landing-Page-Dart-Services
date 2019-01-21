@@ -92,7 +92,7 @@
                 <div class="col-lg-6 header-video">
                     
                     <video poster="img/video-poster.jpg" controls>
-                        <source src="">
+                        <source src="#">
                         
                     </video>
                     
@@ -293,10 +293,11 @@
             
             
             
-<!--            -->
+<!--         Beginning of Services   -->
             
             <div class="container services">
                 
+<!--               Beginning services-title -->
                 <div class="row">
                     
                     <div class="col-md-12 services-title">
@@ -312,24 +313,49 @@
                     </div>
                     
                 </div>
+<!--               End of services-title -->
+
+                                
+
+		
+		
+<!--               Beginning of Switch for services -->
+			<input type="checkbox" id="services-show-info-1" class="services-show-info-1" checked hidden>
+			<input type="checkbox" id="services-show-info-2" class="services-show-info-2" hidden>
+            <input type="checkbox" id="services-show-info-3" class="services-show-info-3" hidden>
+            <input type="checkbox" id="services-show-info-4" class="services-show-info-4" hidden>
+            <input type="checkbox" id="services-show-info-5" class="services-show-info-5" hidden>
+<!--               End of Switch for services -->
                 
                 
-<!--
+                
+                
+        
+<!--           Ebginning of sliders services     -->
+               
                 <div class="row">
                     
-                    <div class="col-lg-8 mx-auto">
+                    <div class="col-lg-8 mx-auto slider-contaier">
                         
+                        
+<!--                       Beginning of slider Statistics  -->
                         <div class="slider">
                             
                             <div class="col-lg-12 slider-head">
+                               
+                                <img src="img/trading-up.png" alt="">
                                 
-                                <img src="img/trading-ip.png" alt="">
                                 
-                                <h4>STATISTICS</h4>
+                                <label for="services-show-info-1">
+                                
+                                	<h4>STATISTICS</h4>
+                                	
+                                	▼         	
+                                </label>
                                 
                             </div>
                             
-                            <div class="hidden-content">
+                            <div class="hidden hidden-content-1">
                                <div class="col-lg-4">
                                     
                                 
@@ -351,19 +377,30 @@
                             </div>
                             
                         </div>
+<!--                       End of slider Statistics  -->
                               
                                
+                        
+                                              
+                    
+<!--                       Beginning of slider Inbox  -->
                         <div class="slider">
                             
                             <div class="col-lg-12 slider-head">
-                                
+                               
                                 <img src="img/services-mail.png" alt="">
                                 
-                                <h4>STATISTICS</h4>
+                                
+                                <label for="services-show-info-2">
+                                
+                                	<h4>INBOX</h4>
+                                	
+                                	▼         	
+                                </label>
                                 
                             </div>
                             
-                            <div class="hidden-content">
+                            <div class="hidden hidden-content-2">
                                <div class="col-lg-4">
                                     
                                 
@@ -385,19 +422,31 @@
                             </div>
                             
                         </div>
-                                              
+<!--                       End of slider Inbox  -->
                     
-                    <div class="slider">
+                    
+                    
+                    
+                    
+                    
+<!--                       Beginning of slider Team  -->
+                        <div class="slider">
                             
                             <div class="col-lg-12 slider-head">
-                                
+                               
                                 <img src="img/services-group.png" alt="">
                                 
-                                <h4>STATISTICS</h4>
+                                
+                                <label for="services-show-info-3">
+                                
+                                	<h4>TEAM</h4>
+                                	
+                                	▼         	
+                                </label>
                                 
                             </div>
                             
-                            <div class="hidden-content">
+                            <div class="hidden hidden-content-3">
                                <div class="col-lg-4">
                                     
                                 
@@ -419,19 +468,31 @@
                             </div>
                             
                         </div>
+<!--                       End of slider Team  -->
                     
                     
-                    <div class="slider">
+                    
+                    
+                    
+                    
+<!--                       Beginning of slider Settings  -->
+                        <div class="slider">
                             
                             <div class="col-lg-12 slider-head">
-                                
+                               
                                 <img src="img/services-setting.png" alt="">
                                 
-                                <h4>STATISTICS</h4>
+                                
+                                <label for="services-show-info-4">
+                                
+                                	<h4>SETTINGS</h4>
+                                	
+                                	▼         	
+                                </label>
                                 
                             </div>
                             
-                            <div class="hidden-content">
+                            <div class="hidden hidden-content-4">
                                <div class="col-lg-4">
                                     
                                 
@@ -453,19 +514,30 @@
                             </div>
                             
                         </div>
-                    
-                    
-                    <div class="slider">
+<!--                       End of slider Settings  -->
+                   
+                   
+                   
+                   
+                   
+<!--                       Beginning of slider Feed  -->
+                        <div class="slider">
                             
                             <div class="col-lg-12 slider-head">
+                               
+                                <img src="img/services-feed.png" alt="">
                                 
-                                <img src="img/wi-fi.png" alt="">
                                 
-                                <h4>STATISTICS</h4>
+                                <label for="services-show-info-5">
+                                
+                                	<h4>FEED</h4>
+                                	
+                                	▼         	
+                                </label>
                                 
                             </div>
                             
-                            <div class="hidden-content">
+                            <div class="hidden hidden-content-5">
                                <div class="col-lg-4">
                                     
                                 
@@ -487,17 +559,15 @@
                             </div>
                             
                         </div>
-                    
-                    
-                    
-                    
+<!--                       End of slider Feed  -->
+                   
+                   
                     </div>            
                     
                     
                 </div>
                 
                 
--->
                 
                 
                       
@@ -533,10 +603,13 @@
                 	<div class="col-lg-6 block-commentary">
                 		
                 		
-                		<div class="commentary-1">
+                		<section class="commentary-1">
                 			
-                			<img src="img/srv-comments-avatar-1.png" class="commentary-avatar" alt="">
+                			<div class="commentary-avatar">
+                				
+                				<img src="img/srv-comments-avatar-1.png" alt="">
                 			
+                			</div>
                 			
                 			<section class="commentary">
                 				
@@ -548,16 +621,20 @@
                 			
                 			</section>
                 			
-                		</div>
+                		</section>
                 		
                 		
                 		
                 		
                 		
                 		
-                		<div class="commentary-2">
+                		 <section class="commentary-2">
+                		 	
+                		 	<div class="commentary-avatar">
+                		 		
+                				<img src="img/srv-comments-avatar-2.png" alt="">
                 			
-                			<img src="img/srv-comments-avatar-2.png" class="commentary-avatar" alt="">
+                		 	</div>
                 			
                 			<section class="commentary">
                 				
@@ -569,23 +646,20 @@
                 			
                 			</section>
 							
-                		</div>
                 		
+                		 </section>
                 		
-                	</div>
-                	
                 	
                 	
                 	
                 </div>
                 
+                  
                 
                 
-                
-                
+				</div>       
 <!--                -->
             </div>
-            
             
             
             
@@ -598,89 +672,336 @@
             		<div class="col-md-12">
             			
             		
-            		<h2 class="title-h2">Our Team</h2>
-            		
-            		
-            		<p class="title-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+						<h2 class="title-h2">Our Team</h2>
+
+
+						<p class="title-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
             		
             		</div>
             		
             	</div>
             	
-            	<input id="show-info" class="show-info" type="checkbox">
-
             	
+<!--            Beginnig of Switch for our-team		-->
+            	<input id="our-t-show-info-1" class="our-t-show-info-1" name="our-team-switch" type="radio" hidden>
+            	<input id="our-t-show-info-2" class="our-t-show-info-2" name="our-team-switch" type="radio" checked hidden>
+            	<input id="our-t-show-info-3" class="our-t-show-info-3" name="our-team-switch" type="radio" hidden>
+
+<!--            End of Switch for our-team		-->
+            	
+            	
+            	
+            	
+<!--            Beginning of row-2 <Our Team>	-->
             	<div class="row row-2">
             		
             		<div class="col-lg-12 our-team-avatar">
             			
             		
-						<div class="avatar-1">
+						<div class="avatar avatar-1">
 						
-							<label for="show-info">
+							<label for="our-t-show-info-1">
 								
-								<img src="img/our-team-avatar-1.png" alt="" class="imgqwe">
+								<img src="img/our-team-avatar-1.png" alt="">
 								
 							</label>
 							
 						</div>
 
 
-						<div class="avatar-2">
-							
-							<div>
+						<div class="avatar avatar-2">
+							<label for="our-t-show-info-2">
 								
-
-							<img src="img/our-team-avatar-1.png" alt="">
-
-							</div>
+								<img src="img/our-team-avatar-1.png" alt="">
+								
+							</label>
 						</div>
 
 
-						<div class="avatar-3">
+						<div class="avatar avatar-3">
 
-							<img src="img/our-team-avatar-1.png" alt="">
+							<label for="our-t-show-info-3">
+								
+								<img src="img/our-team-avatar-1.png" alt="">
+								
+							</label>
 
 						</div>
             		
             		</div>
             	
+            	
+            	
+ 	
+<!--            Beginning of all informations about members	-->
+					<div class="our-team-block-info">
+
+
+						<h4 class="info-member-1">Sophie Turner-1</h4>
+
+						<h4 class="info-member-2">Sophie Turner-2</h4>
+
+						<h4 class="info-member-3">Sophie Turner-3</h4>
+
+						<p class="info-member-1">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 1
+						</p>
+
+						<p class="info-member-2">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 2
+						</p>
+
+
+						<p class="info-member-3">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 3
+						</p>
+						
+						<ul class="info-member-1">
+							<li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+							<li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+							<li><a href="#"><img src="img/inst.png" alt=""></a></li>
+							<li><a href="#"><img src="img/basket.png" alt=""></a></li>
+							<li><a href="#"><img src="img/be.png" alt=""></a></li>
+						</ul>
+						
+						
+						<ul class="info-member-2">
+							<li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+							<li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+							<li><a href="#"><img src="img/inst.png" alt=""></a></li>
+							<li><a href="#"><img src="img/basket.png" alt=""></a></li>
+							<li><a href="#"><img src="img/be.png" alt=""></a></li>
+						</ul>
+						
+						<ul class="info-member-3">
+							<li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+							<li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+							<li><a href="#"><img src="img/inst.png" alt=""></a></li>
+							<li><a href="#"><img src="img/basket.png" alt=""></a></li>
+							<li><a href="#"><img src="img/be.png" alt=""></a></li>
+						</ul>
+						
+					</div>
+<!--            End of all informations about members	-->
+            	
+            	
             	</div>
             	
-            	
-            	
-            		
-            		
-            	
-            	
-            	
-            	<div class="our-team-block-info">
-            		
-            		
-            		<h4 class="name-member-1">Sophie Turner-1</h4>
-            		<h4 class="name-member-2">Sophie Turner-2</h4>
-            		<h4 class="name-member-3">Sophie Turner-3</h4>
-            		
-            		<p>
-            		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-            		</p>
-            		
-            	</div>
-            	
-            	
+            	       	
             </div>
             
+<!--         End of Our Team 	-->
             
             
             
             
             
             
+            
+            
+<!--           Beginning Contact Us  -->
+            
+            <div class="container contact-us">
+            	
+            	
+            	
+<!--            Beginning contact-us-title	-->
+            	
+            	<div class="row contact-us-title">
+            	
+            		<div class="col-md-12">
+            			
+						<h2 class="title-h2">Contact Us</h2>
+           		
+           			</div>
+            		
+            	</div>
+<!--            End of contact-us-title		-->
+            	
+            	
+            	
+            	
+<!--            	Beginning of contact-us-form 	-->
+            	
+            	<div class="row">
+            		
+            		<div class="col-md-12 contact-us-form mx-auto">
+            			
+            			<form action="#">
+            			
+<!--            		Beginning of first string of form	-->
+            				<div class="col-md-12 form-row">
+            					
+            					<input type="text" class="first-name" placeholder="First Name">
+            					
+            					<input type="text" class="last-name" placeholder="Last Name">
+            					
+            				</div>
+<!--            		End of first string of form		-->
+            				
+            				
+            				
+            				
+<!--            			Beginning of second string of form 	-->
+            				<div class="col-md-12 form-row">
+            					
+            					<input type="text" class="e-mail" placeholder="Email">
+            					
+            					<input type="text" class="phone" placeholder="Phone">
+            					
+            				</div>
+<!--            			End of second string of form 	-->
+            				
+            				
+            				
+            				
+<!--            			Beginning message string of form	-->
+            				<div class="col-md-12 form-row">
+            					
+            					<textarea id="message" cols="30" maxlength="600" class="cont-us-form-message" name="message" placeholder="Message"  rows="10"></textarea>
+            					
+            				</div>
+<!--            			End of message string of form	-->
+            				
+            				
+            				
+<!--            			Beginning of send message string	-->
+            				<div class="col-md-12 send-mess-row">
+            					
+            					<input type="checkbox" id="sub-news">
+            					<label for="sub-news">subscribe to the newsletter</label>
+            					
+								
+            					<input type="button" class="send-mess" value="SEND">
+            					
+            				</div>
+<!--            			End of send message string	-->
+            				        				
+            			
+            			</form>
+            		
+            		</div>
+            		
+            		
+            	</div>
+<!--            End of contact-us-form 	-->
+            
+            
+            </div>
+<!--            End of Contact-Us  	-->
             
             
 
-            
         </main>
+<!--       End of main 	-->
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+<!--       Beginning of footer 	-->
+        
+        <footer>
+        	
+        	
+        	
+<!--        Beginning of footer-container	-->
+        	
+        	<div class="container footer-container">
+        		
+        		
+        		
+<!--        	Beginning footer-row-1	-->
+        		
+        		<div class="row footer-row-1">
+        			
+        			<div class="col-lg-4">
+                  
+						<a href="#" class="logo-link">
+							<img src="img/logo.png" alt="">
+						</a>
+                  
+              		</div>
+              		
+              		
+              		
+				   <div class="col-lg-8">
+
+					   <nav>
+
+						   <ul class="footer-menu">
+
+							   <li><a href="#">Home</a></li>
+
+							   <li><a href="#">Service</a></li>
+
+							   <li><a href="#">Extension</a></li>
+
+							   <li><a href="#">Pricing</a></li>
+
+							   <li><a href="#">Help</a></li>
+
+						   </ul>
+
+					   </nav>
+
+				   </div>
+        			
+        		</div>
+<!--        	End of footer-row-1		-->
+        		
+        		
+        		
+        		
+        	
+<!--        	Beginning footer-row-2		-->
+        		
+        		<div class="row footer-row-2">
+        			
+        			<div class="col-md-6">
+        				
+        				<ul class="legislative-information">
+        				
+        					<li><a href="#">Privecy Policy</a></li>
+        					<li>&#8226;</li>
+        					<li><a href="#">About Us</a></li>
+        					<li>&#8226;</li>
+        					<li><a href="#">About Us</a></li>
+        				</ul>
+        				
+        			</div>
+        			
+        			<div class="col-md-6">
+        				
+        				<ul class="our-links">
+        				
+							<li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+							<li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+							<li><a href="#"><img src="img/inst.png" alt=""></a></li>
+							<li><a href="#"><img src="img/basket.png" alt=""></a></li>
+							<li><a href="#"><img src="img/be.png" alt=""></a></li>
+							
+						</ul>
+        				
+        			</div>
+        			
+        		</div>
+<!--        End of footer-row-2			-->
+        		
+        		
+        	</div>
+<!--       End of footer-container 		-->
+        	
+        	
+        	
+        </footer>
+<!--    End of Footer 		-->
+    
     
 </body>
 </html>

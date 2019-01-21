@@ -1,6 +1,8 @@
-/* - - - - Шрифты - - - - */
+/* - - - - Fonts - - - - */
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700,800');
 
+
+/* - - - - Beginning of common styles - - - - - */
 
 *{
     font-family: 'Raleway', sans-serif;
@@ -24,6 +26,8 @@ body {
     color: #061e37;
     font-size: 40px;
     font-weight: 600;
+	text-align: center;
+	margin: 0 auto;
     
 }
 
@@ -32,9 +36,18 @@ body {
     max-width: 560px;
 	margin: 0 auto;
 	margin-top: 15px;
+	text-align: center;
 }
 
+/* - - - - End of common styles - - - - - */
 
+
+
+
+/* - - - - Beginning of styles for header - - - - */
+
+
+/* - - - - Beginning styles for row-1 <header> - - - - */
 .header-container {
     color: #fff;
     min-height: 750px;
@@ -80,10 +93,12 @@ body {
     transition: .4s;
     
 }
+/* - - - - End of styles for row-1 <header> - - - - */
 
-/* - - - - - - - - */
 
 
+
+/* - - - - Beginning of styles for row-2 <header> - - - - */
 .header-row-2 {
     margin-top: 165px;
 }
@@ -127,28 +142,35 @@ body {
         min-height: 250px;
     }
 }
+/* - - - - End of styles for row-2 <header> - - - - */
 
-/* - - - - - - - - - - */
+/* - - - - End of styles for header - - - - */
 
+
+
+
+
+/* - - - - Beginning of styles for Easy & Use  - - - - */
+
+
+/* - - - - Beginnning of styles for row-1 <Easy Us> - - - - - */
 .es-us {
     margin-top: 100px;
     text-align: center;
 }
 
- .es-us-title p{
-     margin: 0 auto;
-
-}
 
 .es-us-subtitle {
     color: #b0bec5;
     font-size: 25px;
     font-weight: 600;
 }
+/* - - - - End of styles for row-1 <Easy Us> - - - - - */
 
-/* - - - - - - - - - */
 
 
+
+/* - - - - Beginnning of styles for row-2 <Easy Us> - - - - - */
 
 .es-us-row-2 {
     margin-top: 95px;
@@ -195,10 +217,12 @@ body {
 .es-us-start:hover, .es-us-start:focus {
     background-color: #061e37;
 }
+/* - - - - End of styles for row-2 <Easy Us> - - - - - */
 
 
-/* - - - - - - - - - - */
 
+
+/* - - - - Beginning of styles for row-3 <Easy Us> - - - - - */
 .es-us-row-3 {
     padding: 0;
     margin-top: 100px;
@@ -245,10 +269,16 @@ body {
 .statistic-block-4 {
     background-color: #ea80fc;
 }
+/* - - - - End of styles for row-3 <Easy Us> - - - - - */
 
-/* - - - - - - - - - - */
+/* - - - - End of styles for Easy & Use - - - - - - */
 
 
+
+
+
+
+/* - - - - Beginning of styles for Services  - - - - */
 
 .services {
     color: #061e37;
@@ -261,8 +291,13 @@ body {
     margin: 20px auto 50px auto;
 }
 
+
+
+
+/* - - - - Beginning of styles for slider <Services> - - - - */
 .slider {
-    margin: 20px 0 20px 0;
+	max-width: 800px;
+    margin: 0 auto;
 }
 
 
@@ -270,61 +305,71 @@ body {
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.13);
     border-radius: 5px;
     display: flex;
-    margin-left: 20px;
+	margin: 0 auto;
+	text-align: center;
     padding: 20px 0 10px 0;
+}
+
+
+.slider-head label {
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	width: 100%;
 }
 
 .slider-head img {
     align-self: center;
-    margin-right: 20px;
+    margin: 0 20px 0 10px;
 }
 
 
-.hidden-content {
+.hidden{
     display: flex;
     display: none;
-    transition: 1s;
-    padding-top: 50px;
+	line-height: 25px;
+    transition: 2s;
+	text-align: left;
     min-height: 240px;
-    opacity: 0;
+    padding-top: 50px;
     
 }
 
-.slider:active .hidden-content {
-    display: flex;
-    transition: 2s;
-    min-height: 240px;
-   
+.services-show-info-1:checked ~ .row .slider-contaier .slider .hidden-content-1, 
+.services-show-info-2:checked ~ .row .slider-contaier .slider .hidden-content-2, 
+.services-show-info-3:checked ~ .row .slider-contaier .slider .hidden-content-3, 
+.services-show-info-4:checked ~ .row .slider-contaier .slider .hidden-content-4, 
+.services-show-info-5:checked ~ .row .slider-contaier .slider .hidden-content-5 {
+	display: flex; 
+	animation: visibility 1s;
+	animation-fill-mode: forwards;
 }
 
-.hidden-content:hover {
-    min-height: 240px;
-    display: flex;
-    position: static;
-    transition: 1s;
-    opacity: 1;
-
+@keyframes visibility {
+	0% {
+		opacity: 0.20;	
+		transform: scale(0.60);
+		
+	}
+	
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
-
-
-/* - - - - - - - - - - - - */
-
-
-
+/* - - - - End of styles for slider <Services> - - - - */
 
 
 
 
 
 /* - - - - Beginning of styles for Comments <Services> - - - - - */
-
-
 .comments {
 	background-image: url(../img/services-bg.jpg);
 	background-repeat: no-repeat;
 	height: 565px;
 	margin-top: 100px;
-	justify-content: space-around
+	justify-content: space-around;
 }
 
 
@@ -365,13 +410,13 @@ body {
 	outline: none;
 	transition: 1.2s;
 }
+/* - - - - End of styles for Comments <Services> - - - - - */
 
 
 
 
-/* - - - - Block commentary <Comments > - - - - */
 
-
+/* - - - - Beginning of styles for Block commentary <Comments > - - - - */
 .block-commentary {
 	display: flex;
 	flex-direction: column;
@@ -381,11 +426,7 @@ body {
 	
 }
 
-.block-commentary img {
-	
-}
-
-img.commentary-avatar {
+.commentary-avatar {
 	align-self: center;
 	margin-right: 50px;
 }
@@ -409,21 +450,18 @@ img.commentary-avatar {
 .commentary h4 {
 	color: #061e37;
 }
+/* - - - - End of styles for Block commentary <Comments > - - - - */
+
+/* - - - - End of styles for Services - - - - */
 
 
-/* - - - - - - - - - - -*/
 
 
 
 
-
+/* - - - - Beginning of styles for Our Team - - - - */
 .our-team {
 	margin-top: 100px;
-}
-
-
-.our-team-title {
-	text-align: center;
 }
 
 
@@ -433,38 +471,293 @@ img.commentary-avatar {
 }
 
 
-/* --------- */
-
-
-.avatar-1,
-.avatar-3 {
+.avatar{
 	transform: scale(0.70);
 	opacity: 0.35;
 	transition: 3s;
 }
 
-.show-info:checked {
+.our-team-block-info {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.our-team-block-info h4 {
+	color: #061e37;
+	display: none;
+	font-size: 18px;
+	margin: 0 auto;
+
+}
+
+
+.our-team-block-info p {
+	color: #90a4ae;
+	display: none;
+	line-height: 25px;
+	max-width: 650px;
+	margin: 0 auto;
+	opacity: 0.5;
+	transition: 1.2s;
+
+}
+
+.our-team-block-info ul {
+	align-items: flex-end;
+	margin-top: 10px;
+	display: none;
+}
+
+.our-team-block-info ul > li {
+	margin: 0 15px;
+}
+
+.our-t-show-info-1:checked ~ .row-2 .our-team-avatar .avatar-1,
+.our-t-show-info-2:checked ~ .row-2 .our-team-avatar .avatar-2,
+.our-t-show-info-3:checked ~ .row-2 .our-team-avatar .avatar-3{
 	transform: scale(1);
 	transition: 3s;
 	opacity: 1;
 
+}
+
+
+.our-t-show-info-1:checked ~ .row-2 .our-team-block-info .info-member-1,
+.our-t-show-info-2:checked ~ .row-2 .our-team-block-info .info-member-2,
+.our-t-show-info-3:checked ~ .row-2 .our-team-block-info .info-member-3{
+	display: flex;
+	justify-content: center;
+	margin: 10px auto;
+	transition: 1.2s;
+	opacity: 1;
+	visibility: visible;
+}
+/* - - - - End of styles for Our Team - - - - */
+
+
+
+
+
+/* - - - - Beginning of styles for Contact-Us - - - - */
+.contact-us {
+	color: #061e37;
+	margin-top: 135px;
+}
+
+.contact-us-form {
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 120px;
+	max-width: 600px;
+	
+}
+
+.contact-us-form input[type=text] {
+	background: none;
+	border: 1px solid #061e37;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: 600;
+	min-width: 280px;
+	outline: none;
+	padding: 10px 20px;
+}
+
+
+.form-row {
+	margin-bottom: 20px;
+}
+
+.first-name {
+	margin-right: 35px;
+}
+
+.e-mail {
+	margin-right: 35px;
+}
+
+
+
+
+.cont-us-form-message {
+	border: 1px solid #061e37;
+	border-radius: 5px;
+	max-width: 600px;
+	margin-right: 40px;
+	resize: none;
+	width: 100%;
+}
+
+.row-send-mess {
+	display: flex;
+	max-width: 600px;
+}
+
+
+.send-mess {
+	background: #1de9b6;
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-weight: 600;
+	outline: none;
+	padding: 15px 40px;
+	margin-left: 250px;
+}
+
+.send-mess:hover,
+.send-mess:focus {
+	background-color: #061e37;
+	transition: .7s;
+}
+
+::-webkit-input-placeholder { color: #061e37; }
+::-moz-placeholder          { color: #061e37; } /* Firefox 19+ */
+:-moz-placeholder           { color: #061e37; } /* Firefox 18- */
+:-ms-input-placeholder      { color: #061e37; }
+
+::-webkit-textarea-placeholder { color: #061e37; }
+::-moz-placeholder          { color: #061e37; } /* Firefox 19+ */
+:-moz-placeholder           { color: #061e37; } /* Firefox 18- */
+:-ms-textarea-placeholder      { color: #061e37; }
+
+
+textarea:-moz-placeholder { 
+	color: #061e37;
+	font-weight: 600;
+}
+textarea::-webkit-input-placeholder { 
+	color: #061e37; 
+	font-weight: 600;
+	padding: 0px 0 0 10px;
+}
+
+/* - - - - End of styles for Contact-Us - - - - */
+
+
+
+
+
+/* - - - - Beginning of styles for Footer - - - - */
+
+footer {
+	margin-top: 100px;
+}
+
+
+.footer-container {
+	background-color: #061e37;
+	padding-top: 100px;
+	justify-content: space-between;
+}
+
+
+/* - - - - Beginning of styles for row-1 <footer> - - - - */
+.footer-row-1 {
+	justify-content: space-between;
 	
 }
 
 
-
-
-.content {
-  margin: auto;
-  max-width: 600px;
-  padding: 30px;
-  background: #777;
-  color: white;
+footer nav {
+	display: flex;
+	justify-content: flex-end;
 }
 
-.show-info:checked ~ .row-2 .our-team-avatar  {
-	visibility: hidden
+
+.footer-menu {
+	display: flex;
+	
 }
+
+
+.footer-menu a {
+	color: #fff;
+	font-size: 15px;
+    transition: .4s;
+	margin: 0 25px;
+}
+/* - - - - End of styles for row-1 <footer> - - - - */
+
+
+
+
+
+/* - - - - Beginning of styles for row-2 <footer> - - - - */
+.footer-row-2 {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.footer-row-2 ul {
+	display: flex;
+	color: #fff;
+	padding: 0;
+}
+
+
+.legislative-information a {
+	color: #fff;
+	font-size: 15px;
+	margin: 0 10px;
+}
+
+
+.our-links {
+	align-items: flex-end;
+	justify-content: flex-end;
+	margin-right: 20px;
+}
+
+.our-links a {
+	margin: 0 10px;
+}
+/* - - - - End of styles for row-2 <footer> - - - - */
+
+/* - - - - End of styles for Footer - - - - */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
