@@ -4,6 +4,7 @@
 
 /* - - - - Beginning of common styles - - - - - */
 
+
 *{
     font-family: 'Raleway', sans-serif;
     list-style-type: none;
@@ -38,6 +39,14 @@ body {
 	margin-top: 15px;
 	text-align: center;
 }
+
+
+@media (max-width: 1200px) {
+	.container{
+		min-width: 100%;
+	}
+}
+
 
 /* - - - - End of common styles - - - - - */
 
@@ -144,7 +153,43 @@ body {
 }
 /* - - - - End of styles for row-2 <header> - - - - */
 
+
+/* - - - - Beginning of styles for header for adaptation - - - - */
+@media (max-width: 992px) {
+	
+	.header-row-1 {
+		align-items: center;
+	}
+	
+	.logotype {
+		text-align: center;
+	}
+	
+	.main-menu {
+		padding: 0;
+	}
+	
+	.header-row-2 {
+		margin-top: 10px;
+		text-align: center;
+	}
+	
+	.header-row-2 p {
+		margin: 20px auto 20px auto;
+	}
+	
+	.header-video {
+		margin-top: 30px;
+	}
+}
+
+
+
+/* - - - - Beginning of styles for header for adaptation - - - - */
+
+
 /* - - - - End of styles for header - - - - */
+
 
 
 
@@ -226,6 +271,7 @@ body {
 .es-us-row-3 {
     padding: 0;
     margin-top: 100px;
+	text-align: left;
 }
 
 
@@ -270,6 +316,23 @@ body {
     background-color: #ea80fc;
 }
 /* - - - - End of styles for row-3 <Easy Us> - - - - - */
+
+
+/* - - - - Beginning of styles for Easy Use for adaptation - - - - */
+
+@media (max-width: 992px) {
+	
+	.es-us-row-3 {
+		font-weight: 100;
+		font-size: 14px;
+	}
+	
+}
+
+
+
+
+/* - - - - End of styles for Easy Use for adaptation - - - - */
 
 /* - - - - End of styles for Easy & Use - - - - - - */
 
@@ -324,7 +387,7 @@ body {
 }
 
 
-.hidden{
+.hidden-content {
     display: flex;
     display: none;
 	line-height: 25px;
@@ -333,6 +396,15 @@ body {
     min-height: 240px;
     padding-top: 50px;
     
+}
+
+.hidden-content img {
+	max-width: 100%;
+	height: auto;
+}
+
+.hidden-content-info p {
+	margin: 0 0 0 15px; 
 }
 
 .services-show-info-1:checked ~ .row .slider-contaier .slider .hidden-content-1, 
@@ -357,6 +429,20 @@ body {
 		transform: scale(1);
 	}
 }
+
+
+/* - - - - Beginning of styles for hiden-content for adaptation - - - - - */
+
+@media (max-width: 992px) {
+	.hidden-content {
+		align-items: flex-start;
+		font-size: 14px;
+	}
+	
+	
+}
+/* - - - - Beginning of styles for hiden-content for adaptation - - - - - */
+
 /* - - - - End of styles for slider <Services> - - - - */
 
 
@@ -367,10 +453,12 @@ body {
 .comments {
 	background-image: url(../img/services-bg.jpg);
 	background-repeat: no-repeat;
-	height: 565px;
+	border: 1px solid red;
+	min-height: 565px;
 	margin-top: 100px;
 	justify-content: space-around;
 }
+
 
 
 .comments-title {
@@ -450,9 +538,59 @@ body {
 .commentary h4 {
 	color: #061e37;
 }
+
 /* - - - - End of styles for Block commentary <Comments > - - - - */
 
+
+
+/* - - - - Beginning of styles for Services for adaptation - - - - - */
+
+@media (max-width: 768px) {
+	
+	.comments-title {
+		margin-top: 20px;
+		text-align: center;
+	}
+	
+	.comments {
+		background: #20ddba;
+		height: auto;
+		padding-bottom: 20px;
+	}
+	
+	.commentary {
+		margin: 10px auto;
+	}
+	
+}
+
+@media (max-width: 992px) {
+	.comments {
+		background: #20ddba;
+	}
+	
+	.commentary {
+		margin: 20px auto;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	
+	.block-commentary {
+		padding-top: 10px;
+	}
+	
+	.commentary {
+		width: 320px;
+	}
+	
+	
+}
+/* - - - - End of styles for Services for adaptation - - - - - */
+
+
 /* - - - - End of styles for Services - - - - */
+
 
 
 
@@ -533,6 +671,8 @@ body {
 	visibility: visible;
 }
 /* - - - - End of styles for Our Team - - - - */
+
+
 
 
 
@@ -633,7 +773,29 @@ textarea::-webkit-input-placeholder {
 	padding: 0px 0 0 10px;
 }
 
+/* - - - - Beginning of styles for Contact Us for adaptation - - - - */
+
+@media (max-width: 800px) {
+	
+	.contact-us-form {
+		margin-top: 50px;
+	}
+	
+	.form-row {
+		text-align: center;
+		margin: 0;
+	}
+	
+	.contact-us-form input[type=text] {
+		display: flex;
+		margin: 0 auto 15px auto;		
+	}
+}
+
+/* - - - - End of styles for Contact Us for adaptation - - - - */
+
 /* - - - - End of styles for Contact-Us - - - - */
+
 
 
 
@@ -743,10 +905,31 @@ footer nav a:focus,
 	padding: 2px 0 2px 0;
 }
 
-/* - - - - Styles for img in footer - - - - */
-
-
 /* - - - - End of styles for row-2 <footer> - - - - */
+
+/* - - - - Beginning of styles for footer for adaptation - - - - */
+
+@media (max-width: 768px) {
+	.footer-row-2 ul {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 992px) {
+	
+	.footer-logo {
+		text-align: center;	
+	}
+	
+	footer nav {
+		justify-content: center;
+	}
+	
+}
+
+
+
+/* - - - - End of styles for footer for adaptation - - - - */
 
 /* - - - - End of styles for Footer - - - - */
 
