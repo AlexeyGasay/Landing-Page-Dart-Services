@@ -41,12 +41,11 @@ body {
 }
 
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
 	.container{
 		min-width: 100%;
 	}
 }
-
 
 /* - - - - End of common styles - - - - - */
 
@@ -69,9 +68,12 @@ body {
 
 }
 
+
 .main-menu {
     display: flex;
     justify-content: center;
+	transition: 1s;
+/*	display: none;*/
 }
 
 .main-menu a {
@@ -81,6 +83,58 @@ body {
     transition: .4s;
 
 }
+
+.header-label {
+	color: #061e37;
+	display: flex;
+	font-weight: 700;
+	justify-content: center;
+	margin: 10px auto;
+	
+}
+
+.header-switch:checked ~ div nav ul,
+.header-switch:checked ~ div .sing-up{	
+	display: block;
+	text-align: center;
+	visibility: visible;
+}
+
+.gabmurger {
+  cursor: pointer;	
+  padding-left: 1.25em;
+  position: relative;
+  width: 30px;
+  height: 30px;	
+	
+}
+
+.menu-global {
+  backface-visibility: hidden;
+  position: absolute;
+/*  left: 0;*/
+  border-top: 4px solid white;
+  width: 100%;
+  transition: 0.55s;
+/*  display: none;	*/
+	visibility: hidden;
+}
+
+.menu-top {
+  top: 0;
+}
+
+.menu-middle {
+  top: 10px;
+}
+
+.menu-bottom {
+  top: 20px;
+}
+
+
+
+
 
 .header-row-1 a:hover,
 .header-row-1 input[type=submit]:hover,
@@ -100,8 +154,10 @@ body {
     outline: none;
     padding: 5px 20px;
     transition: .4s;
-    
 }
+
+
+
 /* - - - - End of styles for row-1 <header> - - - - */
 
 
@@ -145,7 +201,7 @@ body {
     transition: .5s;
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
     .header-video video {
         max-width: 550px;
         min-height: 250px;
@@ -155,7 +211,52 @@ body {
 
 
 /* - - - - Beginning of styles for header for adaptation - - - - */
-@media (max-width: 992px) {
+
+@media screen and (max-width: 730px) {
+	header {
+		position: relative;
+	}
+	
+	.header-container {
+		background: #20ddba;
+	}
+	
+	.header-row-1 {
+		flex-direction: column;
+	}
+	
+	.gamburger {
+		display: block;
+		visibility: visible;
+	}
+	
+	.menu-global {
+		visibility: visible;
+	}
+	
+	.main-menu {
+		flex-direction: column;
+		align-items: center;
+		display: none;
+	}
+	
+	.main-menu li{
+		margin: 5px 0 5px 0;
+	}
+	
+	.sing-up {
+		visibility: hidden;
+	}
+	
+	video {
+		width: 100%;
+		height: auto;
+	}
+	
+	
+}
+
+@media screen and (max-width: 992px) {
 	
 	.header-row-1 {
 		align-items: center;
@@ -279,7 +380,7 @@ body {
     margin: 0 25px 0 80px;
 }
 
-@media (max-width: 1240px) {
+@media screen and (max-width: 1240px) {
     .es-us-row-3 > .col-lg-3 img {
     margin: 0 25px 0 10px;
     transition: 1.3s;
@@ -320,7 +421,7 @@ body {
 
 /* - - - - Beginning of styles for Easy Use for adaptation - - - - */
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
 	
 	.es-us-row-3 {
 		font-weight: 100;
@@ -433,7 +534,7 @@ body {
 
 /* - - - - Beginning of styles for hiden-content for adaptation - - - - - */
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
 	.hidden-content {
 		align-items: flex-start;
 		font-size: 14px;
@@ -453,10 +554,9 @@ body {
 .comments {
 	background-image: url(../img/services-bg.jpg);
 	background-repeat: no-repeat;
-	border: 1px solid red;
+	justify-content: space-around;
 	min-height: 565px;
 	margin-top: 100px;
-	justify-content: space-around;
 }
 
 
@@ -545,7 +645,7 @@ body {
 
 /* - - - - Beginning of styles for Services for adaptation - - - - - */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	
 	.comments-title {
 		margin-top: 20px;
@@ -564,7 +664,7 @@ body {
 	
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
 	.comments {
 		background: #20ddba;
 	}
@@ -574,7 +674,7 @@ body {
 	}
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
 	
 	.block-commentary {
 		padding-top: 10px;
@@ -775,7 +875,7 @@ textarea::-webkit-input-placeholder {
 
 /* - - - - Beginning of styles for Contact Us for adaptation - - - - */
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
 	
 	.contact-us-form {
 		margin-top: 50px;
@@ -842,16 +942,6 @@ footer nav {
 	outline: none;
 }
 
-/*
-.footer-menu a:hover, .footer-menu a:focus {
-	border-radius: 5px 8px;
-	background-color:  #fff;
-	color: #061e37;
-	padding: 2px 0 2px 0;
-}
-*/
-
-
 /* - - - - End of styles for row-1 <footer> - - - - */
 
 
@@ -909,13 +999,13 @@ footer nav a:focus,
 
 /* - - - - Beginning of styles for footer for adaptation - - - - */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.footer-row-2 ul {
 		justify-content: center;
 	}
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
 	
 	.footer-logo {
 		text-align: center;	
